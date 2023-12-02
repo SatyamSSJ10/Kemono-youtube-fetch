@@ -1,6 +1,6 @@
-# Kemono-youtube-fetch
+# Kemono-youtube-fetch (Python 3.8+ Strict)
 Fetches YouTube links from Kemono posts, if there is no link write the post title and any attachments. Fetches 50 posts per fetch and writes them into a text file with an Incremental (+50) filename.
-
+It uses a new assignment expression from 3.8.+ which aren't available on previous versions.
 ## API Description
 
 It uses Kemono API to get the data from the server.
