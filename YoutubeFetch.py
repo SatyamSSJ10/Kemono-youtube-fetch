@@ -7,7 +7,7 @@ import requests as req
 BASE_URL = r"https://kemono.party"
 API = r"api/v1"
 SERVICE_URL = "patreon"
-CREATOR_ID = "961523"
+CREATOR_ID = 111111
 OFFSET = 0
 POST_LIST = []
 
