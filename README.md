@@ -1,9 +1,9 @@
 # Kemono-youtube-fetch
-Fetches Youtube Links from Kemono posts, if no link write the post title and any attachments. Fetches 50 posts per fetch and writes them into a text file with Incremental (+50) filename.
+Fetches YouTube links from Kemono posts, if there is no link write the post title and any attachments. Fetches 50 posts per fetch and writes them into a text file with an Incremental (+50) filename.
 
 ## API Description
 
-Uses Kemono API to get the data from the server.
+It uses Kemono API to get the data from the server.
 The server allows max=50 posts fetch per request.
 
 ## Parameters in the Code
@@ -11,7 +11,14 @@ The server allows max=50 posts fetch per request.
 SERVICE_URL = `{patreon,fanbox,fantia,gumroad,subscribestar}`
 CREATOR_ID = `String or Integer`
 
-More service url can be used which aren't mentioned here but require a bit of changes in the function `def fetch_post()`
+More service URL can be used which aren't mentioned here but require a bit of change in the function `def fetch_post()`
+
+## Fetched Link Results
+
+The Link fetched will be saved as a List [title, attachment(Images), Youtube Link]
+if there are no YouTube links just [title, attachment(Images)]
+
+This script saves them in a text file with {OFFSET}.txt as filename.
 
 
 
